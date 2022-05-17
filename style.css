@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #f72585;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  padding: 0 24px;
+  background: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  font-weight: 600;
+  color: #f72585;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  font-size: 3.2rem;
+}
+
+.header h3 {
+  font-size: 2.4rem;
+  padding: 8px 12px;
+  background: #ffeaf4;
+  cursor: pointer;
+}
+
+.form__validation,
+.form__group {
+  position: relative;;
+}
+
+.form__group {
+  margin: 12px 0;
+  color: #f72585;
+}
+
+.form__group label {
+  position: absolute;
+  left: 20px;
+  top: -6px;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  background: #fff;
+  padding: 0 4px;
+  color: inherit;
+}
+
+.form__group .form__control {
+  width: 100%;
+  height: 40px;
+  margin: 4px 0;
+  border: 1px solid #f72585;
+  color: inherit;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  outline: none;
+  padding: 0 44px 0 20px;
+  font-weight: inherit;
+  background: #fff;
+}
+
+.form__group .form__control:focus {
+  border: 3px solid #f72585;
+}
+
+/* .form__group.invalid,
+.form__group.invalid .form__control {
+  color: red;
+} */
+
+.form__group.invalid .form__control {
+  border: 3px solid #f72585;
+}
+
+.form__error-icon {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  transform: translateY(-50%);
+  color: #f72585;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.form__group.invalid .form__error-icon {
+  opacity: 1;
+}
+
+.form__message {
+  margin-left: 20px;
+  font-size: 1.2rem;
+  color: red;
+}
+
+.form__submit {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.btn__submit {
+  font-family: inherit;
+  padding: 12px 20px;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  background: linear-gradient(to bottom right, #f72585, #ff75b3);
+  border-radius: 4px;
+  cursor: pointer;
+}
